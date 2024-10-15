@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberGuard</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Novecento+Sans:wght@400&family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <section id="header">
+            <div class="left">
+                <div style="margin-right: 50px;" class="menu-toggle">☰ Menu</div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="noticias.html">Últimas Notícias</a></li>
+                        <li><a href="#">Informações</a></li>
+                        <li><a href="#">Currículos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="margin-right: -10px;" class="center">        
+                <img src="assets/img/logo.png" width="100px" alt="Logo da CyberGuard">
+            </div>
+            <div class="right">
+                <input type="text" class="search-input" placeholder="Pesquisar na CyberGuard...">
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="news">
+            <article class="article_primary">
+                <h6>tema da notícia</h6>
+                <h2>Título da Notícia</h2>
+                <h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
+                    tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis 
+                    nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum </h4>
+                <a href="#" class="read-more">Leia mais</a>
+            </article>
+        </section>
+        <section class="news_2">
+            <article class="article_secundary">
+                <h6>tema da notícia</h6>
+                <h2>Título da Notícia</h2>
+                <h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
+                    tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis 
+                    nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum</h4>
+                <a href="#" class="read-more">Leia mais</a>
+            </article>
+            <div>
+                <article class="article_terciary">
+                    <h6>tema da notícia</h6>
+                    <h2>Título da Notícia</h2>
+                    <a href="#" class="read-more">Leia mais</a>
+                </article>
+                <br>
+                <article class="article_terciary">
+                    <h6>tema da notícia</h6>
+                    <h2>Título da Notícia</h2>
+                    <a href="#" class="read-more">Leia mais</a>
+                </article>
+            </div>
+            <article class="article_quarternary">
+                <h4 class="article_quarternary_h">Em alta</h4>
+                <div>
+                    <img href="">
+                    <h6 class="article_quarternary_h">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat.</h6>
+                </div>
+                <div>
+                    <img>
+                    <h6 class="article_quarternary_h">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat.</h6>
+                </div>
+                <div>
+                    <img>
+                    <h6 class="article_quarternary_h">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat.</h6>
+                </div>
+            </article>
+        </section>        
+    </main>
+    <br><br><br><br><br><br><br><br>
+    <footer>
+        <p>&copy; 2024 Jenison Schmitt. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.menu');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
