@@ -6,25 +6,42 @@ body {
     background-color: #f4f4f4;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Novecento Sans', sans-serif; /* Usar Novecento Sans para os cabeçalhos */
-    font-weight: 400; /* Peso normal para os cabeçalhos */
+h1, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
 
+h2{
+    font-size: 55px;
+    font-weight: 700;
+}
+
+h2, h4 {
+    margin: 0;
+}
+
+
 #header {
+    position: fixed;
+    top: 0;
+    left: 0; 
+    right: 0; 
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
     background: #3A4D91;
     color: #ffffff;
     padding: 10px 20px;
+    z-index: 1000; 
 }
+
 
 header h1 {
     margin: 0;
 }
 
 .news {
+    margin-top: 20vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -58,7 +75,7 @@ header h1 {
     color: #ffffff;
 }
 
-footer {
+.footerDev {
     background: white;
     color: #3A4D91;
     text-align: center;
@@ -74,24 +91,21 @@ footer {
 }
 
 .menu {
-    display: flex; 
-    flex-direction: row; 
-    margin-left: 10px;
-    display: none;
-    flex-direction: column;
+    display: none; /* Oculta o menu inicialmente */
+    flex-direction: column; /* Garante que os itens sejam empilhados em coluna */
     position: absolute;
     top: 50px; 
     left: 0;
-    background-color: #3A4D91;
+    background-color: #3A4D91; /* Cor de fundo azul */
     padding: 10px;
     border-radius: 5px;
     z-index: 1000; 
 }
+
 .menu.active {
-    margin-top: 30px;
-    margin-left: 40px;
-    background-color: white;
-    display: flex;
+    margin-top: 20px;
+    margin-left: 80px;
+    display: flex; /* Exibe o menu quando ativo */
 }
 
 .menu-toggle {
@@ -101,18 +115,30 @@ footer {
 
 .menu ul {
     display: flex;
+    flex-direction: column; /* Coloca os itens em coluna */
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
 .menu ul li {
-    margin: 0 10px;
+    margin: 10px 0; /* Espaço vertical entre os itens */
 }
+
 .menu ul li a {
-    color: #3A4D91;
+    color: #ffffff; /* Texto branco por padrão */
     text-decoration: none;
+    padding: 10px; /* Adicionado para aumentar a área clicável */
+    transition: background-color 0.3s; /* Suaviza a transição de hover */
 }
+
+/* Efeito hover */
+.menu ul li a:hover {
+    background-color: white; /* Cor de fundo ao passar o mouse */
+    color: #3A4D91; /* Altera a cor do texto ao passar o mouse */
+}
+
+
 .search-input {
     margin-bottom: 10px;
     padding: 10px;
@@ -126,7 +152,7 @@ footer {
     border-radius: 20px;
     margin: 20px;
     padding: 50px;
-    width: 1000px;
+    width: 1200px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -186,4 +212,89 @@ footer {
     height: 100px;
     width: 150px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footerMenu {
+    min-height: 45vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    background: #3A4D91;
+    color: #ffffff;
+}
+
+.div-footerMenu {
+    max-width: 80%;
+    display: flex; 
+    justify-content: space-between;
+    align-items: start;
+}
+
+.margin {
+    margin: 0 50px;
+}
+
+.margin2{
+    margin: 0 150px;
+}
+
+.noticia1{
+    width: 800px;
+}
+
+.noticia1 h1 {
+    color: #3A4D91;
+    font-size: 35px;
+}
+
+.noticia1 h3 {
+    color: #68696D;
+    font-size: 20px;
+}
+
+.article_primary_noticia{
+    background: #3A4D91;
+    border: 2px solid #dddddd;
+    border-radius: 20px;
+
+    padding: 50px;
+    width: 800px;
+    height: 400px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.article_quarternary_2{
+    margin-top: 40vh;
+    background: white;
+    border: 2px solid #3A4D91;
+    border-radius: 20px;
+    padding: 50px;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+@media(max-width:850px){
+    .margin {
+        margin: 0 0px;
+    }
+    
+    .margin2{
+        margin: 0 0px;
+    }
+
+    .legend{
+        display: none;
+    }
+
+    .div-footerMenu {
+        max-width: 60%;
+        display: flex; 
+        justify-content: space-between;
+        align-items: start;
+    }
 }
