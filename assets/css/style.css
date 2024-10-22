@@ -103,9 +103,11 @@ header h1 {
 }
 
 .menu.active {
-    margin-top: 20px;
+    margin-top: 25px;
     margin-left: 80px;
     display: flex; /* Exibe o menu quando ativo */
+    border: 2px solid #717eab;
+    border-radius: 5px;
 }
 
 .menu-toggle {
