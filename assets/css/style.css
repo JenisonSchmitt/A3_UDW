@@ -91,12 +91,12 @@ header h1 {
 }
 
 .menu {
-    display: none; /* Oculta o menu inicialmente */
-    flex-direction: column; /* Garante que os itens sejam empilhados em coluna */
+    display: none; 
+    flex-direction: column; 
     position: absolute;
     top: 50px; 
     left: 0;
-    background-color: #3A4D91; /* Cor de fundo azul */
+    background-color: #3A4D91;
     padding: 10px;
     border-radius: 5px;
     z-index: 1000; 
@@ -105,7 +105,7 @@ header h1 {
 .menu.active {
     margin-top: 25px;
     margin-left: 80px;
-    display: flex; /* Exibe o menu quando ativo */
+    display: flex;
     border: 2px solid #717eab;
     border-radius: 5px;
 }
@@ -117,35 +117,50 @@ header h1 {
 
 .menu ul {
     display: flex;
-    flex-direction: column; /* Coloca os itens em coluna */
+    flex-direction: column;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
 .menu ul li {
-    margin: 10px 0; /* Espaço vertical entre os itens */
+    margin: 10px 0;
 }
 
 .menu ul li a {
-    color: #ffffff; /* Texto branco por padrão */
+    color: #ffffff;
     text-decoration: none;
-    padding: 10px; /* Adicionado para aumentar a área clicável */
-    transition: background-color 0.3s; /* Suaviza a transição de hover */
+    padding: 10px; 
+    transition: background-color 0.3s; 
 }
 
 /* Efeito hover */
 .menu ul li a:hover {
-    background-color: white; /* Cor de fundo ao passar o mouse */
-    color: #3A4D91; /* Altera a cor do texto ao passar o mouse */
+    background-color: white; 
+    color: #3A4D91; 
 }
 
+.search-container {
+    position: relative;
+    display: inline-block; 
+}
 
 .search-input {
+    width: 200px;
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 20px;
     border: none;
+}
+
+#searchButton {
+    position: absolute;
+    right: 5px; 
+    top: 40%;
+    transform: translateY(-50%); 
+    border: none; 
+    background: transparent; 
+    cursor: pointer; 
 }
 
 .article_primary {
@@ -258,7 +273,6 @@ header h1 {
     background: #3A4D91;
     border: 2px solid #dddddd;
     border-radius: 20px;
-
     padding: 50px;
     width: 800px;
     height: 400px;
@@ -315,7 +329,9 @@ header h1 {
     cursor: pointer;
 }
 
-
+.highlight_buscar {
+    background-color: #1f2c58;
+}
 
 
 @media(max-width:850px){
@@ -336,5 +352,18 @@ header h1 {
         display: flex; 
         justify-content: space-between;
         align-items: start;
+    }
+    .search-input {
+        width: 100px;
+    }
+
+    .article_primary_noticia{
+        background: #3A4D91;
+        border: 2px solid #dddddd;
+        border-radius: 20px;
+        padding: 50px;
+        width: 250px;
+        height: 200px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 }
