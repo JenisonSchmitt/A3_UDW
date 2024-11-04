@@ -190,7 +190,7 @@ header h1 {
     color: white;
 }
 
-.article_terciary {
+.article_tertiary {
     background: #3A4D91;
     border: 2px solid #dddddd;
     border-radius: 20px;
@@ -199,11 +199,11 @@ header h1 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.article_terciary h2, h6, h4{
+.article_tertiary h2, h6, h4{
     color: white;
 }
 
-.article_quarternary {
+.article_quaternary {
     background: white;
     border: 2px solid #3A4D91;
     border-radius: 20px;
@@ -212,11 +212,11 @@ header h1 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.article_quarternary_h{
+.article_quaternary_h{
     color: #3A4D91;
 }
 
-.article_quarternary_h2{
+.article_quaternary_h2{
     margin-left: 20px;
     color: #3A4D91;
 }
@@ -279,7 +279,7 @@ header h1 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.article_quarternary_2{
+.article_quaternary_2{
     margin-top: 40vh;
     background: white;
     border: 2px solid #3A4D91;
@@ -395,7 +395,7 @@ header h1 {
         width: 80%; 
     }
 
-    .article_terciary{
+    .article_tertiary{
         margin-left: 20px;
         align-items: center;
         max-width: 300px; 
@@ -403,14 +403,14 @@ header h1 {
     }
 
     .article_secundary,
-    .article_quarternary{
+    .article_quaternary{
         margin-left: 80px;
         align-items: center;
         max-width: 300px; 
         width: 80%; 
     }
 
-    .article_quarternary_2{
+    .article_quaternary_2{
         margin-top: 12vh;
     }
 
