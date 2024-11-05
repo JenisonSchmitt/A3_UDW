@@ -9,7 +9,13 @@ function closePopup() {
 }
 
 document.querySelectorAll('.footerMenu p').forEach(item => {
-    if (item.textContent.includes("Política de Privacidade")) {
+    if (item.textContent.includes("Privacy Policy")) {
+        item.addEventListener('click', openPopup);
+    }
+});
+
+document.querySelectorAll('.menu a').forEach(item => {
+    if (item.textContent.includes("◦ Privacy Policy")) {
         item.addEventListener('click', openPopup);
     }
 });
